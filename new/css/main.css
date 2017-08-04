@@ -1,0 +1,662 @@
+/*@media only screen and (min-width: 0px){
+    html {
+        font-size:4px !important;
+    }
+    
+}
+
+@media only screen and (min-width: 360px){
+    html {
+        font-size:6px !important;
+    }
+   
+}
+@media only screen and (min-width: 400px){
+    html {
+        font-size:8px !important;
+    }
+}*/
+/*@media only screen and (min-width: 480px){
+    html {
+        font-size:10px !important;
+    }
+}*/
+
+    html {
+        font-size:12px !important;
+    }
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{	
+	width:100%;
+
+	min-height: 100%;
+	position: relative;
+	background-color: #fff;
+}
+#nav{
+	width: 100%;
+	min-width: 100rem;
+	position: fixed;
+	z-index: 999;
+	top: 0px;
+	min-width: 100rem;
+	background-color: rgba(255,255,255,0.9);
+	border-bottom: 1px solid #ccc;
+}
+.nav{
+	height: 4rem;
+	
+	
+}
+.width{
+	width:100rem;
+	margin: 0 auto;
+}
+.fallwidth{
+	width: 100%;
+	min-width: 100rem;
+}
+.maxwidth{
+
+}
+.head{
+
+	height: 40rem;
+	overflow: hidden;
+}
+.menu>li{
+	float: left;
+	font-size: 1.1rem;
+	height: 2rem;
+	padding: 1rem 2rem;
+	position: relative;
+}
+.menu>li:hover{
+	background-color: #ff9008;
+
+}
+.auth>li{
+	float: left;
+	font-size: 1.1rem;
+	margin: 0.5rem 1rem;
+	padding: 0.5rem 1rem;
+}
+#login-li{
+	border: 1px solid #000;
+	border-radius:5px;
+    -moz-border-radius:10px; /* Old Firefox */
+}
+#reg-li{
+	border: 1px solid #ff9008;
+	border-radius:5px;
+    -moz-border-radius:10px; /* Old Firefox */
+}
+
+#login-li:hover,#reg-li:hover{
+	border: 1px solid #ff9008;
+    background-color: #ff9008;
+    cursor: pointer;
+}
+.head ul,.foot ul,.endbody ul,.float-right ul,#login-div ul,.head li,.foot li,.endbody li,.float-right li,#login-div li{
+	list-style: none;
+/*	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    margin-before: 0;
+    margin-after: 0;
+    padding-start: 0;*/
+}
+.head a,.foot a,.endbody a,.float-right a，#login-div a{
+	text-decoration:none;
+	color: #000;
+	cursor: pointer;
+}
+
+.menu-2{
+	display: none;
+	background-color: rgba(255,255,255,0.6);
+	width: 30rem;
+	position: absolute;
+	top:4rem;
+	padding: 1rem 1rem;
+
+}
+.menu-2 li{
+	margin: 0.5rem 0;
+	cursor: pointer;
+}
+.menu-2 li a:hover{
+	color: #ff9008;
+}
+.menu-2>ul{
+	float: left;
+	margin: 0 1rem;
+}
+.head{
+	border-bottom: 1px solid #eee;
+}
+
+.head-img{
+	position: relative;
+
+	
+}
+.head-img img{
+	position: absolute;
+	width: 100%;
+	min-width: 100rem;
+	height: 40rem;
+
+}
+.head-img div{
+	position: absolute;
+	
+}
+.head-i{
+	width: 10rem;
+	height: 3rem;
+	
+	color: #999;
+	font-size: 3rem;
+	top:35rem;
+	left: 45%;
+}
+
+.head-i li{
+	display: inline-block;
+	width:1rem;
+	height: 1rem;
+	margin: 0 1.5rem;
+	background-color: #ccc;
+	border-radius:10px;
+    -moz-border-radius:10px; /* Old Firefox */
+    cursor: pointer;
+}
+.active{
+	background-color: #f98 !important;
+}
+
+#back-img{
+	width: 3rem;
+	height: 3rem;
+	background-color: #ccc;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	color: #999;
+	font-size: 3rem;
+	top:17rem;
+	left: 1rem;
+}
+#next-img{
+	width: 3rem;
+	height: 3rem;
+	background-color: #ccc;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	color: #999;
+	font-size: 3rem;
+	top:17rem;
+	right: 1rem;
+}
+#next-img:hover,#back-img:hover{
+	cursor: pointer;
+	background-color: #aaa;
+}
+.toshow{
+	animation: toshow 0.6s linear 1 normal	;
+		-moz-animation: toshow 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: toshow 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: toshow 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.tohide{
+	animation: tohide 0.6s linear 1 normal	;
+		-moz-animation: tohide 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: tohide 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: tohide 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.rightin{
+	animation: rightin 0.6s linear 1 normal	;
+		-moz-animation: rightin 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: rightin 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: rightin 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.leftout{
+	animation: leftout 0.6s linear 1 normal	;
+		-moz-animation: leftout 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: leftout 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: leftout 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+
+.leftin{
+	animation: leftin 0.6s linear 1 normal	;
+		-moz-animation: leftin 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: leftin 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: leftin 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.rightout{
+	animation: rightout 0.6s linear 1 normal	;
+		-moz-animation: rightout 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: rightout 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: rightout 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+
+.foot{
+
+	
+	height: 10rem;
+	background-color: #333940;
+	padding: 8rem 0rem;
+}
+.foot-list{
+	height: 20rem;
+	
+}
+.body-div{
+	background-color: #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 2rem auto;
+	box-shadow: 0.8px 0.8px 0px 1px #999;
+}
+.body-div h3{
+	text-align: center;
+	
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: #333;
+	padding: 1.5rem 0;
+}
+.body-div ul{
+	text-align: center;
+}
+.body-div li{
+	cursor: pointer;
+	position: relative;
+	display:inline-block;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 70rem;
+	-webkit-border-radius:70rem;
+	box-shadow: 2px 2px 0px 1px #999;
+	background-color: #f60;
+	background-origin: border-box;
+	margin: 1rem 1rem;
+
+}
+.body-div li a{
+	color: #eee;
+	position: absolute;
+	top:35%;
+	left: 15%;
+}
+.body-div li:hover a{
+	position: absolute;
+	top:38%;
+	left: 20%;
+}
+.body-div li:hover{
+	width: 7rem;
+	height: 7rem;
+	margin: 0rem 0.5rem 0.5rem 0.5rem;
+
+}
+.foot-list div{
+	position: relative;
+}
+.foot-list div span{
+	position: absolute;
+	left: 30rem;
+	top:10rem;
+	font-size: 1.3rem;
+	color: #aaa;
+}
+
+.foot-list ul{
+	float: left;
+	margin:0 13rem;
+}
+.foot-list h3{
+	color: #fff;
+	font-weight: normal;
+}
+.foot-list li{
+	margin: 0.5rem 0;
+}
+.foot-list a{
+	color: #888;
+}
+.foot-list a:hover{
+	text-decoration:underline;
+}
+
+/*渐入渐出 */
+@keyframes toshow
+	{
+	from {opacity:0;}
+	to {opacity:1;}
+	}
+
+@-moz-keyframes toshow /* Firefox */
+{
+from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes toshow /* Safari 和 Chrome */
+{
+from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-o-keyframes toshow /* Opera */
+{
+from {opacity:0;}
+	to {opacity:1;}
+}
+
+
+@keyframes tohide
+	{
+	from {opacity:1;}
+	to {opacity:0;}
+	}
+
+@-moz-keyframes tohide /* Firefox */
+{
+from {opacity:1;}
+	to {opacity:0;}
+}
+
+@-webkit-keyframes tohide /* Safari 和 Chrome */
+{
+from {opacity:1;}
+	to {opacity:0;}
+}
+
+@-o-keyframes tohide /* Opera */
+{
+from {opacity:1;}
+	to {opacity:0;}
+}
+
+
+/*移入移出*/
+@keyframes rightin
+	{
+	from {right:-100%;}
+	to {right: 0%;}
+	}
+
+@-moz-keyframes rightin /* Firefox */
+{
+from {right:-100%;}
+	to {right: 0%;}
+	}
+
+@-webkit-keyframes rightin /* Safari 和 Chrome */
+{
+from {right:-100%;}
+	to {right: 0%;}
+	}
+
+@-o-keyframes rightin /* Opera */
+{
+from {right:-100%;}
+	to {right: 0%;}
+}
+
+@keyframes leftout
+	{
+	from {right:0%;}
+	to {right: 100%;}
+	}
+
+@-moz-keyframes leftout /* Firefox */
+{
+	from {right:0%;}
+	to {right: 100%;}
+}
+
+@-webkit-keyframes leftout /* Safari 和 Chrome */
+{
+	from {right:0%;}
+	to {right: 100%;}
+}
+
+@-o-keyframes leftout /* Opera */
+{
+	from {right:0%;}
+	to {right: 100%;}
+}
+
+
+@keyframes leftin
+	{
+	from {left:-100%;}
+	to {left: 0%;}
+	}
+
+@-moz-keyframes leftin /* Firefox */
+{
+from {left:-100%;}
+	to {left: 0%;}
+	}
+
+@-webkit-keyframes leftin /* Safari 和 Chrome */
+{
+from {left:-100%;}
+	to {left: 0%;}
+	}
+
+@-o-keyframes leftin /* Opera */
+{
+from {left:-100%;}
+	to {left: 0%;}
+}
+
+@keyframes rightout
+	{
+	from {left:0%;}
+	to {left: 100%;}
+	}
+
+@-moz-keyframes rightout /* Firefox */
+{
+	from {left:0%;}
+	to {left: 100%;}
+}
+
+@-webkit-keyframes rightout /* Safari 和 Chrome */
+{
+	from {left:0%;}
+	to {left: 100%;}
+}
+
+@-o-keyframes rightout /* Opera */
+{
+	from {left:0%;}
+	to {left: 100%;}
+}
+
+
+.endbody{
+	padding-top: 30px;
+	height:100px;
+	background-color: #0a122d; 
+}
+
+.float-right{
+	position: fixed;
+	right: 2rem;
+	bottom: 4rem;
+}
+
+tx{
+	margin: 0 auto;
+	text-align: center;
+	color: #ddd;
+}
+.float-right>div{
+	position: relative;
+	background-color: #996;
+	text-align: center;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	font-size: 1.1rem;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+}
+.float-right>div>div{
+	position: absolute;
+	display: none;
+	right: 3.8rem;
+	top: 0rem;
+	background: url("../imgs/tel-bg.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.float-right-child h2{
+	font-size: 1.5rem;
+	margin-right: 20px;
+	color: #ddd;
+}
+
+.float-right-child a{
+	font-size: 1.5rem;
+	color: #ddd;
+}
+
+.float-right-child a:hover{
+	color: #999;
+}
+
+#login-div{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: rgba(200,200,200,0.6);
+}
+
+#login{
+	position: relative;
+	height: 280px;
+	width: 240px;
+	background-color: #fff;
+	margin: 10% auto;
+}
+.exit{
+	background-color: #eee;
+	border:0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: inline-block;
+	font-size: 10px;
+	color: #555;
+	width: 17px;
+	cursor: pointer;
+}
+
+#login ul{
+
+}
+#login li{
+	color: #555;
+	float: left;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	font-size: 13px;
+	padding: 10px 10px;
+	background-color: #ddd;
+	box-shadow: 0px 0px 5px #fff;
+}
+
+.login-form{
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+
+}
+.login-form input{
+	box-shadow: 0px 0px 1px #ccc;
+	border-radius: 3px;
+	border:1px solid #ccc;
+	height: 25px;
+	margin:5px auto;
+	width: 190px;
+}
+
+input::-webkit-input-placeholder{
+	color: #ccc;
+}
+input::-moz-input-placeholder{
+	color: #ccc;
+}
+input::-moz-input-placeholder{
+	color: #ccc;
+}
+input::-ms-input-placeholder{
+	color: #ccc;
+}
+.hide{
+	overflow: hidden;
+}
+.login-foot{
+	position: absolute;
+	bottom: 0px;
+	width: 240px;
+	height: 120px;
+	
+}
+
+.login-foot a{
+	color: #888;
+}
+
+.login-foot button{
+	border: 0px;
+	color: #fff;
+	background-color: #f72;
+	width: 190px;
+	height: 30px;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	cursor: pointer;
+	margin:10px 20px;
+}
+
+.login-foot button:hover{
+	box-shadow: 0px 0px 5px #f98;
+}
+.login-foot p{
+	margin-top:5px;
+	width: 240px;
+	text-align: center;
+}
+.login-foot-change{
+	position: absolute;
+	background-color: #000;
+	width: 30px;
+	height: 30px;
+	bottom: 0px;
+	right: 0px;
+}
+.login-active{
+	background-color: #fff !important;
+}

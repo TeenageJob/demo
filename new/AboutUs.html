@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AboutUs</title>
+    <script src="jquery-3.2.1.min.js" type="text/javascript" type="text/javascript"></script>
+    <script>
+        function changepicture(id, pid) {
+            $(pid).attr('background', "url('point.png')");
+            $('html, body').animate({
+                scrollTop: $(id).offset().top-40
+            }, 1000);
+        }
+    </script>
+    <style>
+        #leftcatalog {
+            padding-top: 100px;
+            width: 28%;
+            border-right: 1px solid grey;
+            height: 100%;
+            text-align: right;
+            position: fixed;
+        }
+        
+        .fontstyle {
+            color: #777;
+            line-height: 24px;
+            font-size: 14px;
+        }
+        
+        .ulformat {
+            list-style-type: none;
+            margin-right: -8px;
+        }
+        
+        .liformat{
+            text-align: right;
+            vertical-align: middle;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+        .liformat a{
+        	font-size: 20px;
+        	color:#000;
+        }
+        
+        .abc {
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        
+        #rightcontext {
+            width: 100%;
+            padding-left: 32%;
+            padding-top: 40px;
+        }
+        
+        #rightcontext div h2 {
+            font-size: 40px;
+            line-height: 84px;
+            color: #333;
+            margin-bottom: 1px;
+            border-bottom: 1px solid #e9e9e9;
+        }
+        
+        .point {
+            margin: 0 auto;
+            text-align: right;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: grey;
+        }
+        
+        a {
+            outline: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+	<div class="head" style="height: 0rem;" onmouseover="stopauto()" onmouseout="autoImg()">
+		<nav id="nav" >
+			<div class="nav width">
+				<ul class="menu">
+					<li style="padding: 0 0;">
+						<a href="#"><img style="height:4rem;" src="./imgs/logo_2.gif"></a>
+					</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">解决方案</a>
+						<div class="menu-2">
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">产品定价</a></li>
+					<li><a href="#">AI开放平台</a></li>
+					<li><a href="#">品牌</a></li>
+					<li><a href="#">加盟</a></li>
+					<li><a href="#">365商学院</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+				<ul class="auth">
+					<li id="login-li" onclick="document.getElementById('login-div').style.display='block';$('body').addClass('hide');">登录</li>
+					<li id="reg-li">注册</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+    <div id="leftcatalog">
+        <ul class="ulformat">
+            <li class="liformat"><a href="javascript:void(0)" onclick="changepicture('#d1','#po1')"><span class="abc">公司简介&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="po1" class="point"></span></a></li>
+            <li class="liformat"><a href="javascript:void(0)" onclick="changepicture('#d2','#po2')"><span class="abc">产品介绍&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="po2" class="point"></span></a></li>
+            <li class="liformat"><a href="javascript:void(0)" onclick="changepicture('#d3','#po3')"><span class="abc">行业领先&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="po3" class="point"></span></a></li>
+            <li class="liformat"><a href="javascript:void(0)" onclick="changepicture('#d4','#po4')"><span class="abc">联系我们&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="po4" class="point"></span></a></li>
+        </ul>
+    </div>
+    <div id="rightcontext">
+        <div style="width:1000px">
+            <div id="d1">
+                <h2>公司简介</h2>
+                <div>
+                    <p class="fontstyle">南京掌控网络科技有限公司，是一家高速成长的移动互联网创新型企业，公司秉承“用技术提升企业经营效率”的商业使命，是中国企业级移动互联服务市场的领跑者。</p>
+                    <p class="fontstyle">掌控网络总部设在江苏南京，在北京、上海、深圳等全国核心城市设有十多个分支机构，截止目前已获得来自国际顶尖投资机构金沙江创投，宽带资本的两轮融资。《移动信息化研究中心》权威数据显示，掌控网络客户服务满意度行业第一，客户续费率行业第一。</p>
+                    <p class="fontstyle">掌控网络拳头产品外勤365，是国内最知名的SaaS产品之一。</p>
+                </div>
+            </div>
+            <div id="d2">
+                <h2>产业介绍</h2>
+                <div>
+                    <p class="fontstyle">南京掌控网络科技有限公司，是一家高速成长的移动互联网创新型企业，公司秉承“用技术提升企业经营效率”的商业使命，是中国企业级移动互联服务市场的领跑者。</p>
+                    <p class="fontstyle">掌控网络总部设在江苏南京，在北京、上海、深圳等全国核心城市设有十多个分支机构，截止目前已获得来自国际顶尖投资机构金沙江创投，宽带资本的两轮融资。《移动信息化研究中心》权威数据显示，掌控网络客户服务满意度行业第一，客户续费率行业第一。</p>
+                    <p class="fontstyle">掌控网络拳头产品外勤365，是国内最知名的SaaS产品之一。</p>
+                </div>
+            </div>
+            <div id="d3">
+                <h2>行业领先</h2>
+                <div class="container-info">
+                    <p class="fontstyle">【便于使用】 运用SaaS技术开发，无需部署开户即可使用、终身迭代升级，解决了传统软件成本高、实施难、使用复杂、迭代缓慢等各种问题。</p>
+                    <p class="fontstyle">【体验更好】 手机端APP采用原生+H5开发技术，遵循互联网消费级产品体验设计，支持包括iOS和安卓几乎所有机型，流量更节约、兼容性更强、使用更流畅、升级更便捷。</p>
+                    <p class="fontstyle">【更懂行业】<br>手机端实现“一图两表六定”、企业专属“拜访八步骤”等，已成为线下销售人员管理的标杆与标配。</p>
+                    <p class="fontstyle">新一代商贸进销存，将进销存延伸到手机端，在访销车销的过程中实时手机端下订单、查库存、做促销；贯通销售下单与后台打单，实现自动化流程，帮助商贸公司/经销商/批发商等贸易企业开源节流，提升销售效率。</p>
+                    <p class="fontstyle">一整套从销售行为自动化到分销管理的完整体系，帮助品牌商/厂商/大型经销商等中大型企业实时掌握各级渠道进销存情况，实时掌握终端门店的动销情况，进而洞悉商品的流量、流向、流速数据，提升销售效率与决策能力。</p>
+                    <p class="fontstyle"></p>
+                    <p class="fontstyle">【易于对接】 提供丰富的Open API标准接口与对接技术，实现与企业原有ERP等系统的对接，不改变用户原操作习惯，确保数据的同步与精确。</p>
+                </div>
+                <h4>市场领先</h4>
+                <div class="container-info">
+                    <p class="fontstyle">标杆客户信赖：外勤365已为超过200,产品000家企业提供云产品及相关服务，拥有一批国内乃至国际顶尖的企业客户，包括强生、德高、百事、张裕、中化化肥、开米、贵州百灵等</p>
+                    <p class="fontstyle">权威组织认可：外勤365是中国优秀软件产品、移动CRM最具影响力品牌<br>顶尖资本关注：国际顶尖投资机构金沙江创投、宽带资本两轮融资</p>
+                </div>
+                <h4>服务领先</h4>
+                <div class="container-info">
+                    <p class="fontstyle">设立“客户成功部”，帮助客户持续用好产品，提升销售效率直至迈向成功，客成部的服务分为三个阶段：第一阶段，帮助客户便捷使用迅速上手，第一时间体验到产品效果；第二阶段，帮助客户配合业务流程梳理管理体系，制定规范的制度；第三阶段，引导客户理解产品产生的管理数据，帮助管理者分析数据对于业务的意义，将数据利用起来制定决策，提高效率。</p>
+                    <p class="fontstyle">在北京、上海、广州、深圳、成都、杭州、武汉等15个核心城市设立分支机构，提供优质本地化客户服务。</p>
+                </div>
+                <h4>安全领先</h4>
+                <div class="container-info">
+                    <p class="fontstyle">外勤365视客户数据安全为己任，系统部署于全球最领先的云计算提供商amazon和国内最领先的云计算供应商阿里云，采用国际领先的SSL加密数据，确保传输过程与传输内容的100%安全。</p>
+                    <p class="fontstyle">外勤365拥有ISO/IEC 27001国际认证，达到信息安全管理体系的全球最高水准。</p>
+                </div>
+            </div>
+            <div id="d4">
+                <h2>联系我们</h2>
+                <div>
+                    <img src="map.png" usemap="#map" border="0">
+                    <map name="Map" id="map">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+                    <area shape="rect" coords="",href="",class="",id="">
+               </map>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="foot fallwidth">
+		<div class="foot-list width">
+			<ul class="list">
+				<h3 >外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<ul class="list">
+					<h3>外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<ul class="list">
+					<h3>外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<div>
+					<span>联系我们：4000284866  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp关于我们：<img onmouseover="document.getElementById('codejpg').style.display='block';" onmouseout="document.getElementById('codejpg').style.display='none';" style="height: 30px;" src="./imgs/weixin.png"></span>
+					<img id="codejpg" style="position: absolute;	right: 30rem;display: none;" src="./imgs/code.jpg">
+				</div>
+		</div>
+	</div>
+	<div class="endbody">
+		<div class="width">
+			<img style="float: left;margin-left: 12rem;	" src="./imgs/logo_2.gif">	<p style="margin:0 20px;float: right;font-size: 1.2rem;margin-top: 20px;color: #fff;">备案许可证：蜀ICP备11016982号-3 Copyright © 2015 成都顺治网络科技公司 访问总量:  今日访问量:  </p>
+
+		</div>
+	</div>
+	<div class="float-right">
+		<div style="background-color: #eee;">
+		<img src="./imgs/qq.png" style="width: 100%;height: 100%;">
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div >
+			<tx>产品咨询</tx>
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div>
+			<tx>技术支持</tx>
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div style="background-color: #869;" onclick="gotoHtml('.head');">
+			<tx>回到顶部</tx>
+			
+		</div>
+	</div>
+	<div id="login-div">
+		<div id="login">
+			<div>
+			<ul>
+				<li class="login-active">
+					<m>管理平台</m>
+					<form class="login-form" action="#1" style="display: block;">
+						<input type="text" name="qydm" placeholder="您的企业代码">
+						<input type="text" name="username" placeholder="员工姓名/已认证手机">
+						<input type="password" name="password" placeholder="您的密码">
+					</form>
+				</li>
+				<li>
+					<m>管理平台</m>
+					<form class="login-form" action="#2" >
+						<input type="text" name="username" placeholder="用户名">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="password" placeholder="密码">
+					</form>
+				</li>
+				<li>
+					<m>管理平台</m>
+					<form class="login-form" action="#3" >
+						<input type="text" name="username" placeholder="用户名">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="password" placeholder="密码">
+					</form>
+				</li>
+			</ul>
+			<button class="exit" onclick="document.getElementById('login-div').style.display='none';$('body').removeClass('hide');">X</button>
+			</div>
+			<div class="login-foot">
+				<button onclick="$('.login-active form').submit();">登录</button>
+				<p><a href="#">还没账号？免费注册</a></p>
+				<p><a href="#">找回超级用户密码</a></p>
+				<div class="login-foot-change">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript">
+		$('.liformat a').on('click',function(){
+			$(this).parent().parent().find('a').css('color','#000');
+			$(this).css('color','#f60');
+		})
+	</script>
+</body>
+
+</html>

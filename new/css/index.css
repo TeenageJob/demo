@@ -1,0 +1,330 @@
+ul,li{
+	list-style: none;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    margin-before: 0;
+    margin-after: 0;
+    padding-start: 0;
+}
+a{
+	text-decoration:none;
+	color: #000;
+	cursor: pointer;
+}
+
+.head-img{
+	position: relative;
+
+	
+}
+.head-img img{
+	position: absolute;
+	width: 100%;
+	min-width: 100rem;
+	height: 40rem;
+
+}
+.head-img div{
+	position: absolute;
+	
+}
+
+
+.head-i{
+	width: 10rem;
+	height: 3rem;
+	
+	color: #999;
+	font-size: 3rem;
+	top:35rem;
+	left: 45%;
+}
+
+.head-i li{
+	display: inline-block;
+	width:1rem;
+	height: 1rem;
+	margin: 0 1.5rem;
+	background-color: #ccc;
+	border-radius:10px;
+    -moz-border-radius:10px; /* Old Firefox */
+    cursor: pointer;
+}
+
+
+
+.active{
+	background-color: #f98 !important;
+}
+
+#back-img{
+	width: 3rem;
+	height: 3rem;
+	background-color: #ccc;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	color: #999;
+	font-size: 3rem;
+	top:17rem;
+	left: 1rem;
+}
+#next-img{
+	width: 3rem;
+	height: 3rem;
+	background-color: #ccc;
+	padding-bottom: 1.5rem;
+	padding-left: 1rem;
+	color: #999;
+	font-size: 3rem;
+	top:17rem;
+	right: 1rem;
+}
+#next-img:hover,#back-img:hover{
+	cursor: pointer;
+	background-color: #aaa;
+}
+.toshow{
+	animation: toshow 0.6s linear 1 normal	;
+		-moz-animation: toshow 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: toshow 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: toshow 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.tohide{
+	animation: tohide 0.6s linear 1 normal	;
+		-moz-animation: tohide 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: tohide 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: tohide 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.rightin{
+	animation: rightin 0.6s linear 1 normal	;
+		-moz-animation: rightin 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: rightin 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: rightin 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.leftout{
+	animation: leftout 0.6s linear 1 normal	;
+		-moz-animation: leftout 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: leftout 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: leftout 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+
+.leftin{
+	animation: leftin 0.6s linear 1 normal	;
+		-moz-animation: leftin 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: leftin 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: leftin 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+.rightout{
+	animation: rightout 0.6s linear 1 normal	;
+		-moz-animation: rightout 0.6s linear 1 normal;	/* Firefox */
+		-webkit-animation: rightout 0.6s linear 1 normal;	/* Safari 和 Chrome */
+		-o-animation: rightout 0.6s linear 1 normal;
+		animation-fill-mode: forwards;
+}
+
+
+.body-div{
+	background-color: #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 2rem auto;
+	box-shadow: 0.8px 0.8px 0px 1px #999;
+}
+.body-div h3{
+	text-align: center;
+	
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: #333;
+	padding: 1.5rem 0;
+}
+.body-div ul{
+	text-align: center;
+}
+.body-div li{
+	cursor: pointer;
+	position: relative;
+	display:inline-block;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 70rem;
+	-webkit-border-radius:70rem;
+	box-shadow: 2px 2px 0px 1px #999;
+	background-color: #f60;
+	background-origin: border-box;
+	margin: 1rem 1rem;
+
+}
+.body-div li a{
+	color: #eee;
+	position: absolute;
+	top:35%;
+	left: 15%;
+}
+.body-div li:hover a{
+	position: absolute;
+	top:38%;
+	left: 20%;
+}
+.body-div li:hover{
+	width: 7rem;
+	height: 7rem;
+	margin: 0rem 0.5rem 0.5rem 0.5rem;
+
+}
+
+/*渐入渐出 */
+@keyframes toshow
+	{
+	from {opacity:0;}
+	to {opacity:1;}
+	}
+
+@-moz-keyframes toshow /* Firefox */
+{
+from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes toshow /* Safari 和 Chrome */
+{
+from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-o-keyframes toshow /* Opera */
+{
+from {opacity:0;}
+	to {opacity:1;}
+}
+
+
+@keyframes tohide
+	{
+	from {opacity:1;}
+	to {opacity:0;}
+	}
+
+@-moz-keyframes tohide /* Firefox */
+{
+from {opacity:1;}
+	to {opacity:0;}
+}
+
+@-webkit-keyframes tohide /* Safari 和 Chrome */
+{
+from {opacity:1;}
+	to {opacity:0;}
+}
+
+@-o-keyframes tohide /* Opera */
+{
+from {opacity:1;}
+	to {opacity:0;}
+}
+
+
+/*移入移出*/
+@keyframes rightin
+	{
+	from {right:-100%;}
+	to {right: 0%;}
+	}
+
+@-moz-keyframes rightin /* Firefox */
+{
+from {right:-100%;}
+	to {right: 0%;}
+	}
+
+@-webkit-keyframes rightin /* Safari 和 Chrome */
+{
+from {right:-100%;}
+	to {right: 0%;}
+	}
+
+@-o-keyframes rightin /* Opera */
+{
+from {right:-100%;}
+	to {right: 0%;}
+}
+
+@keyframes leftout
+	{
+	from {right:0%;}
+	to {right: 100%;}
+	}
+
+@-moz-keyframes leftout /* Firefox */
+{
+	from {right:0%;}
+	to {right: 100%;}
+}
+
+@-webkit-keyframes leftout /* Safari 和 Chrome */
+{
+	from {right:0%;}
+	to {right: 100%;}
+}
+
+@-o-keyframes leftout /* Opera */
+{
+	from {right:0%;}
+	to {right: 100%;}
+}
+
+
+@keyframes leftin
+	{
+	from {left:-100%;}
+	to {left: 0%;}
+	}
+
+@-moz-keyframes leftin /* Firefox */
+{
+from {left:-100%;}
+	to {left: 0%;}
+	}
+
+@-webkit-keyframes leftin /* Safari 和 Chrome */
+{
+from {left:-100%;}
+	to {left: 0%;}
+	}
+
+@-o-keyframes leftin /* Opera */
+{
+from {left:-100%;}
+	to {left: 0%;}
+}
+
+@keyframes rightout
+	{
+	from {left:0%;}
+	to {left: 100%;}
+	}
+
+@-moz-keyframes rightout /* Firefox */
+{
+	from {left:0%;}
+	to {left: 100%;}
+}
+
+@-webkit-keyframes rightout /* Safari 和 Chrome */
+{
+	from {left:0%;}
+	to {left: 100%;}
+}
+
+@-o-keyframes rightout /* Opera */
+{
+	from {left:0%;}
+	to {left: 100%;}
+}
+
